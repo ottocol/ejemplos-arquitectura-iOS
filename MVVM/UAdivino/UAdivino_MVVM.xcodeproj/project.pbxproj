@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		279C4AAC1E4F79F70036E2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C4AAB1E4F79F70036E2BA /* AppDelegate.swift */; };
+		279C4AAE1E4F79F70036E2BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C4AAD1E4F79F70036E2BA /* ViewController.swift */; };
+		279C4AB11E4F79F70036E2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279C4AAF1E4F79F70036E2BA /* Main.storyboard */; };
+		279C4AB31E4F79F70036E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279C4AB21E4F79F70036E2BA /* Assets.xcassets */; };
+		279C4AB61E4F79F70036E2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279C4AB41E4F79F70036E2BA /* LaunchScreen.storyboard */; };
+		279C4AC11E4F7CEB0036E2BA /* UAdivinoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C4AC01E4F7CEB0036E2BA /* UAdivinoViewModel.swift */; };
+		279C4AC31E4F7D8B0036E2BA /* UAdivinoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C4AC21E4F7D8B0036E2BA /* UAdivinoModel.swift */; };
+		279C4AC51E4F82650036E2BA /* UAdivinoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C4AC41E4F82650036E2BA /* UAdivinoView.swift */; };
+		A7CA44BDFBAD9B7A7F593ECA /* Pods_UAdivino_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E215EF257D8D52A47D2F61F /* Pods_UAdivino_MVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E215EF257D8D52A47D2F61F /* Pods_UAdivino_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UAdivino_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		279C4AA81E4F79F70036E2BA /* UAdivino_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAdivino_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		279C4AAB1E4F79F70036E2BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		279C4AAD1E4F79F70036E2BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		279C4AB01E4F79F70036E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		279C4AB21E4F79F70036E2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279C4AB51E4F79F70036E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		279C4AB71E4F79F70036E2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		279C4AC01E4F7CEB0036E2BA /* UAdivinoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAdivinoViewModel.swift; sourceTree = "<group>"; };
+		279C4AC21E4F7D8B0036E2BA /* UAdivinoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAdivinoModel.swift; sourceTree = "<group>"; };
+		279C4AC41E4F82650036E2BA /* UAdivinoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAdivinoView.swift; sourceTree = "<group>"; };
+		9BA3CA0A281D812E021B4173 /* Pods-UAdivino_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAdivino_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-UAdivino_MVVM/Pods-UAdivino_MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		E55A6446421141E6A306651A /* Pods-UAdivino_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAdivino_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UAdivino_MVVM/Pods-UAdivino_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		279C4AA51E4F79F70036E2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CA44BDFBAD9B7A7F593ECA /* Pods_UAdivino_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		279C4A9F1E4F79F70036E2BA = {
+			isa = PBXGroup;
+			children = (
+				279C4AAA1E4F79F70036E2BA /* UAdivino_MVVM */,
+				279C4AA91E4F79F70036E2BA /* Products */,
+				772D0E29E728654CDA4EDED6 /* Pods */,
+				DC31F96BD635BD064532EC96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		279C4AA91E4F79F70036E2BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279C4AA81E4F79F70036E2BA /* UAdivino_MVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279C4AAA1E4F79F70036E2BA /* UAdivino_MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				279C4ABF1E4F7A0A0036E2BA /* ViewModel */,
+				279C4ABE1E4F7A050036E2BA /* View */,
+				279C4ABD1E4F7A000036E2BA /* Model */,
+				279C4AAB1E4F79F70036E2BA /* AppDelegate.swift */,
+				279C4AAD1E4F79F70036E2BA /* ViewController.swift */,
+				279C4AAF1E4F79F70036E2BA /* Main.storyboard */,
+				279C4AB21E4F79F70036E2BA /* Assets.xcassets */,
+				279C4AB41E4F79F70036E2BA /* LaunchScreen.storyboard */,
+				279C4AB71E4F79F70036E2BA /* Info.plist */,
+			);
+			path = UAdivino_MVVM;
+			sourceTree = "<group>";
+		};
+		279C4ABD1E4F7A000036E2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				279C4AC21E4F7D8B0036E2BA /* UAdivinoModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		279C4ABE1E4F7A050036E2BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				279C4AC41E4F82650036E2BA /* UAdivinoView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		279C4ABF1E4F7A0A0036E2BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				279C4AC01E4F7CEB0036E2BA /* UAdivinoViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		772D0E29E728654CDA4EDED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E55A6446421141E6A306651A /* Pods-UAdivino_MVVM.debug.xcconfig */,
+				9BA3CA0A281D812E021B4173 /* Pods-UAdivino_MVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC31F96BD635BD064532EC96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E215EF257D8D52A47D2F61F /* Pods_UAdivino_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		279C4AA71E4F79F70036E2BA /* UAdivino_MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279C4ABA1E4F79F70036E2BA /* Build configuration list for PBXNativeTarget "UAdivino_MVVM" */;
+			buildPhases = (
+				837DE2200B24026E9396744E /* [CP] Check Pods Manifest.lock */,
+				279C4AA41E4F79F70036E2BA /* Sources */,
+				279C4AA51E4F79F70036E2BA /* Frameworks */,
+				279C4AA61E4F79F70036E2BA /* Resources */,
+				6827C03C8272CFB1AA664A68 /* [CP] Embed Pods Frameworks */,
+				299483589EBC2C1B822F3DC2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UAdivino_MVVM;
+			productName = UAdivino_MVVM;
+			productReference = 279C4AA81E4F79F70036E2BA /* UAdivino_MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		279C4AA01E4F79F70036E2BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Universidad de Alicante";
+				TargetAttributes = {
+					279C4AA71E4F79F70036E2BA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 279C4AA31E4F79F70036E2BA /* Build configuration list for PBXProject "UAdivino_MVVM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 279C4A9F1E4F79F70036E2BA;
+			productRefGroup = 279C4AA91E4F79F70036E2BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				279C4AA71E4F79F70036E2BA /* UAdivino_MVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		279C4AA61E4F79F70036E2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279C4AB61E4F79F70036E2BA /* LaunchScreen.storyboard in Resources */,
+				279C4AB31E4F79F70036E2BA /* Assets.xcassets in Resources */,
+				279C4AB11E4F79F70036E2BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299483589EBC2C1B822F3DC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UAdivino_MVVM/Pods-UAdivino_MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6827C03C8272CFB1AA664A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UAdivino_MVVM/Pods-UAdivino_MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837DE2200B24026E9396744E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		279C4AA41E4F79F70036E2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279C4AAE1E4F79F70036E2BA /* ViewController.swift in Sources */,
+				279C4AC11E4F7CEB0036E2BA /* UAdivinoViewModel.swift in Sources */,
+				279C4AC31E4F7D8B0036E2BA /* UAdivinoModel.swift in Sources */,
+				279C4AC51E4F82650036E2BA /* UAdivinoView.swift in Sources */,
+				279C4AAC1E4F79F70036E2BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		279C4AAF1E4F79F70036E2BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279C4AB01E4F79F70036E2BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		279C4AB41E4F79F70036E2BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				279C4AB51E4F79F70036E2BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		279C4AB81E4F79F70036E2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		279C4AB91E4F79F70036E2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		279C4ABB1E4F79F70036E2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55A6446421141E6A306651A /* Pods-UAdivino_MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UAdivino_MVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UA.UAdivino-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		279C4ABC1E4F79F70036E2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA3CA0A281D812E021B4173 /* Pods-UAdivino_MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UAdivino_MVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UA.UAdivino-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		279C4AA31E4F79F70036E2BA /* Build configuration list for PBXProject "UAdivino_MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279C4AB81E4F79F70036E2BA /* Debug */,
+				279C4AB91E4F79F70036E2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279C4ABA1E4F79F70036E2BA /* Build configuration list for PBXNativeTarget "UAdivino_MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279C4ABB1E4F79F70036E2BA /* Debug */,
+				279C4ABC1E4F79F70036E2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 279C4AA01E4F79F70036E2BA /* Project object */;
+}

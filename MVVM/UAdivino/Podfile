@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'UAdivino_MVVM' do
+ use_frameworks!
+
+ pod 'Bond', '~> 6.0'
+end
