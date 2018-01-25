@@ -41,7 +41,7 @@ public extension Lock {
 /// Lock
 extension NSLock: Lock {
 
-  public convenience init(name: String) {
+  @objc public convenience init(name: String) {
     self.init()
     self.name = name
   }
@@ -50,7 +50,7 @@ extension NSLock: Lock {
 /// Recursive Lock
 extension NSRecursiveLock: Lock {
 
-  public convenience init(name: String) {
+  @objc public convenience init(name: String) {
     self.init()
     self.name = name
   }
